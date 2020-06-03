@@ -1,0 +1,15 @@
+<!-- Digitando "!" e Enter a estrutura básica abaixo é criada-->
+
+<!DOCTYPE html> 
+<html lang="en"> <!--Deve-se atualizar "en" para "pt_br-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta serve para configurar os metadados da página-->
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
