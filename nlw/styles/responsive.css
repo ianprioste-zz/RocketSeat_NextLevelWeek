@@ -24,6 +24,10 @@ Evitando encavalamentos de conteúdos (@media)*/
         align-items: center;
     }
 
+    #page-search-results .cards{
+        grid-template-columns: 1fr;
+    }
+
 }
 
 @media (min-width : 1700px){

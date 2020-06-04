@@ -1,6 +1,8 @@
 #page-create-point {
     width: 90%;
+    height: 100%;
     max-width: 1100px;
+    margin: 0 auto; 
 /* Alinhamento de caixa pelo lado de fora da caixa*/
     
 }
