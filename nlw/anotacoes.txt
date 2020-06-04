@@ -13,3 +13,107 @@
 </body>
 </html>
 
+
+<!-- CONFIGURANDO SERVIDOR -->
+
+
+Configuração
+    Instalar node.js
+    Instalar git
+    Trocar terminal para bash
+
+    Fazer a estrutura das pastas public e src
+
+Transformar pasta em Projeto Node.js
+
+    No terminal digitar: npm init -y (será criado um arquivo json)
+
+    Preencher informações do package.json criado 
+        Importante atualizar de index.js para o destino do server criado
+
+Instalar Express
+    Fechar todos os arquivos abertos
+    No terminal: npm install express
+
+
+Iniciar o Servidor server.js
+    const express = require("express")
+    const server = express()
+
+    // ligar o servidor
+    server.listen(3000)
+
+Executar arquivo javascript
+    No terminal: node src/server.js
+    No navegador: http://localhost:3000/ (receber msg Cannot GET /)
+
+
+Atualizar package.json para criar atalho Npm
+    Atualizar:  "test": "echo \"Error: no test specified\" && exit 1" para   "start": "node src/server.js"
+    No terminal: npm start (executar javasript)
+
+
+Toda vez que fazemos atualizações no servidor, é preciso reinicia-lo. Para resolver este problema:
+    No terminal: npm install nodemon -D
+    Atualizar package.json para     "start": "nodemon src/server.js"
+
+
+
+<!-- CRIAR PÁGINAS HTML DINÂMICAS -->
+
+Instalar o Nunjucks: npm install nunjucks
+Atualzar server
+    
+    // Utilizando template engine
+    const nunjucks = require("nunjucks")
+    nunjucks.configure("src/views",{ 
+        express: server,
+        noCache: true 
+    })
+    
+Criar html e chamar {%include "pasta/arquivo.html"%}
+
+<!-- Nunjucks Template Engine -->
+
+Buscar Nunjucks Templates e Instalar
+
+ctrl+shift+p 
+    > settings json
+    Abrir settings.json
+
+    Incluir: 
+
+    "files.associations": {
+        "*.html": "njk"
+        },
+    "emmet.includeLanguages": {
+        "njk": "html"
+        },
+        
+
+<-- Usar Nunjucks para fazer uma estrutura BASE  -->
+
+Criar um documento layout.html
+Copiar uma página
+Limpar códigos que tem em uma página e não tem em outra
+
+Manter: 
+    <title> </title> Será substituido por uma variável
+    <div id="page-home"> "page-home" será substituido por uma variável
+
+Incluir no inícios das páginas que irão receber o layout:
+n-extends (enter)
+    {% extends "layout.html"%}
+
+Definir os blocks (n-block)
+
+Apagar o que já está no layout
+
+Indicar onde cada informação entra com blocks
+
+<-- Atalhos Terminal -->
+
+ctrl+L - Limpar Terminal
+ctrl+' - Abrir e fechar terminal
+ctrl+c - Para a execução
+

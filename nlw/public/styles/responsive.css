@@ -2,7 +2,7 @@
 Por exemplo quando a largura for menor que 900px
 Evitando encavalamentos de conteúdos (@media)*/
 
-@media (max-width : 900px){
+@media (max-width : 1300px){
     #page-home {
         background-position-x: 70vw;
     }
@@ -28,6 +28,43 @@ Evitando encavalamentos de conteúdos (@media)*/
         grid-template-columns: 1fr;
     }
 
+    #page-create-point form .field-group{
+        flex-direction: column;
+    }
+
+    /*Pegar o field que vem ao lado de um field para aplicar propriedades no segundo*/
+    #page-create-point form .field-group .field + .field{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px){
+
+    #page-create-point form {
+        margin: 30px auto;
+        padding: 10px;
+    }
+
+    #page-create-point form h1{
+        font-size: 25px;
+    }
+
+    #page-create-point form fieldset{
+        margin-top: 30px;
+    }
+
+    #page-create-point form legend {
+        display: block;
+    }
+
+    #page-create-point form legend h2{
+        font-size: 19px;
+    }
+
+    #page-create-point .items-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 @media (min-width : 1700px){
@@ -38,13 +75,6 @@ Evitando encavalamentos de conteúdos (@media)*/
 
 }
 
-@media (max-height  : 760px){
-
-    #page-home {
-        background-position-y: 10vw;
-    }
-
-}
 
 @media (max-height  : 760px){
 
@@ -53,3 +83,12 @@ Evitando encavalamentos de conteúdos (@media)*/
     }
 
 }
+
+@media (max-height  : 760px){
+
+    #page-home {
+        background-position-y: 10vw;
+    }
+
+}
+
