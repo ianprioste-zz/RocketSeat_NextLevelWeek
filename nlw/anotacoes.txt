@@ -117,3 +117,10 @@ ctrl+L - Limpar Terminal
 ctrl+' - Abrir e fechar terminal
 ctrl+c - Para a execução
 
+=== BANCO DE DADOS SQL === 
+
+Terminal npm insall sqlite3
+
+na pasta src criar pasta database + arquivo db.js
+
+
