@@ -1,4 +1,4 @@
-# ANOTAÇÕES NEX LEVEL WEEK
+# ANOTAÇÕES NEXT LEVEL WEEK
 
 ## ATALHOS TERMINAL
     ctrl+' - abre/fecha terminal
