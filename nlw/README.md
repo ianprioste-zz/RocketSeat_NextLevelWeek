@@ -84,7 +84,7 @@
             return res.render("index.html",{title:"Um título"})
         })
 
-## index.html + layout.html 
+## Lembretes Nunjucks 
 
    ### Estrutura HTML 
         Emmet: ! (enter)
@@ -102,6 +102,10 @@
             </div>
         </body>
 
+   ### Blocos de códigos 
+
+        {% block content %}
+        {% endblock content %}
 
 ## LEMBRETES CSS 
 
